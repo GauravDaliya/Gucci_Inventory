@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Gucci Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="/" class="brand-link">
+                <img src="gucci.jpg" alt="Gucci Logo" class="brand-image img-circle elevation-3">
+                <span class="brand-text font-weight-light">Gucci</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="/create" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p>Add Product</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p class="text">Sales Details</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/updatestock" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p class="text">Update Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/deletestock" class="nav-link">
+                                <i class="nav-icon far fa-circle text-info"></i>
+                                <p class="text">Delete Sales</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <h1 id="i1">Add New Product
+            </section>
+
+            <section class="content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="container"> 
+                                <form action="/addData" method="POST">
+                                    <label>Product Id:</label>
+                                    <input type="number" placeholder="Enter product Id" name="pid"><br>
+                                    <label>Category :</label>
+                                    <input type="text" placeholder="Enter product category" name="category"><br>
+                                    <label>Type :</label>
+                                    <input type="text" placeholder="Enter type" name="type"><br>
+                                    <label>Gender :</label>
+                                    <input type="text" placeholder="Enter Gender" name="gender"><br>
+                                    <label>Product Color :</label>
+                                    <input type="text" placeholder="Enter product Color" name="colour"><br>
+                                    <label>Size :</label>
+                                    <input type="number" placeholder="Enter product size" name="size"><br>
+                                    <label>Product Quantity:</label>
+                                    <input type="number" placeholder="Enter product Quantity" name="stock"><br>
+                                    <label>Product Cost Price:</label>
+                                    <input type="number" placeholder="Enter product CP" name="cp"><br>
+                                    <label>Product Selling Price:</label>
+                                    <input type="number" placeholder="Enter product SP" name="sp"><br><br>  
+                                    <button type="button" class="btn btn-success">Add</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
