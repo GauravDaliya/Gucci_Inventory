@@ -11,8 +11,3 @@ Tech Used:
 ->HTML
 ->BootStrap
 
-
-HomePage:
-![Screenshot](homepage.png)
-
-
