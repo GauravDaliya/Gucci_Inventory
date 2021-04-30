@@ -57,7 +57,7 @@ app.post('/deleteData', (req, res) => {
                 break;
             }
         }
-        db.collection('Gucci').deleteOne({ pid: parseInt(req.body.pid) }, (err, result) => {
+        db.collection('Gucci').deleteOne({ pid: req.body.pid }, (err, result) => {
             if (err) return res.send(err);
             console.log(req.body.pid + "Stock Deleted");
             res.redirect('/');
@@ -80,7 +80,7 @@ app.post('/updateData', (req, res) => {
             res.redirect('/');
             return console.log("Please Enter Correct Product Id");
         }
-        db.collection('Gucci').findOneAndUpdate({ pid: parseInt(req.body.pid) },
+        db.collection('Gucci').findOneAndUpdate({ pid: req.body.pid },
             { $set: { stock: parseInt(prevStock) + parseInt(req.body.stock) } }, { sort: { pid: -1 } }, (err, result) => {
                 if (err) return res.send(err);
                 console.log(req.body.pid + "Stock Updated");
